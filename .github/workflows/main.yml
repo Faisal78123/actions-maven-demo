@@ -37,7 +37,7 @@ jobs:
     - run: "ls -la $HOME"
     - run: "ls -la $HOME/.m2"
 
-    - uses: docker-action
+    - uses: ./docker-action
       with:
         foo: 'yolo'
 
