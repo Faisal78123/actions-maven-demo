@@ -1,0 +1,13 @@
+# action.yml
+name: 'Test action'
+description: 'Does whatever we feel atm.'
+inputs:
+  foo: 
+    description: 'Random value'
+    required: false
+    default: 'bar'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.foo }}
