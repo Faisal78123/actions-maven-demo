@@ -1,4 +1,4 @@
-FROM maven:3.6.3-jdk-11
+FROM maven:3.5.4-alpine
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
